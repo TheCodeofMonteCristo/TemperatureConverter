@@ -1,3 +1,9 @@
+//Commented Out Code
+/*Comment Out Begins
+
+Comment Out Ends*/
+
+
 // Complete the following functions to make our program work!
 
 /**
@@ -5,8 +11,9 @@
  * @param {number} f temperature in °F
  * @returns {number} temperature in °C
  */
+
 function convertToCelsius(f) {
-  // TODO
+  return (f-32) * 5 / 9;
 }
 
 /**
@@ -22,18 +29,35 @@ function convertToCelsius(f) {
  * @returns {string} the description from the table above corresponding to
  * the given Fahrenheit temperature `f`
  */
+
+
 function describeTemperature(f) {
-  // TODO
+  if (f < 32) {
+    return "this is very cold";
+} else if (f < 64) {
+    return "this is cold";
+} else if (f < 86) {
+    return "this is warm";
+} else if (f < 100) {
+    return "this is hot";
+} else {
+
+
+    return "this is very hot";
+}
 }
 
 /**
  * @param {number} limit
  * @returns {number} a random integer in the range [0, `limit`)
  */
-function getRandomInt(limit) {
-  // TODO
-}
 
+
+
+
+function getRandomInt(limit) {
+  return Math.floor(Math.random() * limit);
+}
 // -------------------- DO NOT CHANGE THE CODE BELOW ---------------------- //
 /**
  * Converts the given temperature from Fahrenheit to Celsius,
