@@ -33,8 +33,11 @@ function convertToCelsius(f) {
 
 function describeTemperature(f) {
   if (f < 32) {
+    
     return "this is very cold";
 } else if (f < 64) {
+
+
     return "this is cold";
 } else if (f < 86) {
     return "this is warm";
